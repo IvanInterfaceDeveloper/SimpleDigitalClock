@@ -1,0 +1,73 @@
+
+// im
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-image: url(lake-canada.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;  /*solucionamos el espacio restante del scroll producido por el 100vh*/
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.clock{
+    display: flex;
+    gap: 10px;
+}
+
+.clock div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+span:first-child {
+
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, .3);
+    padding: 15px;
+    background:rgb(30, 144, 255, .3);
+    border-radius: 3px 3px 0px 0px;
+}
+
+.clock .text{
+    padding: 5px 0;
+    font-size: 0.8em;
+    font-weight: 300;
+    text-transform: capitalize;
+    border-radius: 0 0 3px 3px;
+    background:rgb(30, 144, 255, .6);
+    letter-spacing: 2px;
+}
+
+.clock #ampm {
+    position: absolute; /* deja de ocupar su espacio relative*/
+    font-size: 1em;
+    color: #fff;
+    height: 20px;    
+}
+
+
